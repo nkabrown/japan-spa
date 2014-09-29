@@ -58,6 +58,13 @@ nav li:hover a {
 
 #info_title{
   text-align: center;
+  margin-bottom: 100px;
+}
+
+#intro{
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -68,15 +75,24 @@ nav li:hover a {
 }
 
 #onsen_water {
-  max-height: 300px;
-  max-width: 600px;
+  max-width: 40%;
   position: relative;
-  margin: 0 31.5% 0 31.5%;
+  float: left;
+  margin: 0 auto;
+}
+
+#mud{
+  display: none;
+}
+
+#yubatake{
+  display: none;
 }
 
 .text{
   display: none;
   position: absolute;
+  right: 40px;
   width: 50%;
   margin-top: 40px;
   margin-left: 20px;
