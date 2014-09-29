@@ -1,5 +1,9 @@
 /*Navigation Bar*/
 
+#bars {
+  color: #FFF;
+}
+
 nav {
   position: absolute;
   margin-top: 45px;
@@ -83,9 +87,41 @@ nav li:hover a {
 }  
 
 
+/*Landing Page*/
 
 
+#landing {
+  background-image: url("/images/onsen_nightview.jpg");
+}
 
+#insignia {
+  position: absolute;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+#logo {
+  color: #FFF;
+  font-size: 6em;
+  font-family: 'Big Caslon', serif;
+}
+
+/*Contact Page*/
+
+#screen_space {
+  width: 1264px;
+  margin: 0 auto;
+  min-height: 768px;
+}
+
+#contact {
+  background-color: #ACE5EE;
+}
+
+form {
+ width: 325px;
+ margin: 250px auto;
+}
 
 
 

@@ -17,17 +17,12 @@
           
         });
 
-        $("#bars").on('mouseleave', function() {
+        $("#nav").on('mouseleave', function() {
             $("#nav").slideUp();
         });
 
-        $("#onsen_water").hover(function(){
-          (this).animate({left: "100px"}, 400)
-        })
-
       });
     </script>
-
   </head>
   <body>
     <nav>
@@ -39,5 +34,6 @@
           <a href="contact"><li>Contact</li></a>
        </ul>
     </nav>
+    <%= yield %>
   </body>
 </html>
