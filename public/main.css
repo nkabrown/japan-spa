@@ -1,18 +1,24 @@
+/*Navigation Bar*/
+
+nav {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 65px;
+}
+
 #nav {
   list-style: none;
   font-weight: 500;
-  float: left;
+  margin-left: -40px;
 }
 
 #nav li {
-  float: left;
-  margin-right: 0px;
   position: relative;
 }
 
 #nav a {
   display: block;
-  padding: 10px 0;
+  padding: 5px 0;
   color: #FF1493;
   text-decoration: none;
 }
