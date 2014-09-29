@@ -55,10 +55,15 @@ nav li:hover a {
 /*****************************************************************/
 /****************************** Info *****************************/
 /*****************************************************************/
+#info_page{
+  background-color: #CDE5E5;
+}
 
 #info_title{
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  margin-top: 0;
+  padding-top: 50px;
 }
 
 #intro{
@@ -68,33 +73,25 @@ nav li:hover a {
   margin-bottom: 50px;
 }
 
-#onsen{
-  height: 300px;
+.sections{
+  height: 330px;
   width: 100%;
-  background-color: #E8D1BE;
 }
 
-#onsen_water {
+.info_images {
   max-width: 40%;
   position: relative;
+  margin: 0 31% 0 31%;
   float: left;
-  margin: 0 auto;
-}
-
-#mud{
-  display: none;
-}
-
-#yubatake{
-  display: none;
 }
 
 .text{
   display: none;
   position: absolute;
+  float: left;
   right: 40px;
   width: 50%;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 20px;
 }  
 

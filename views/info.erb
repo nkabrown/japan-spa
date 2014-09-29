@@ -2,42 +2,36 @@
 	<script>
 	$(document).ready(function(){
 		$("#onsen_water").mouseenter(function(){
+			$(this).animate({right: "390px"}, 400);
 		  $("#water_text").show();
-		  $("#mud").hide();
-		  $("#yubatake").hide();
 		});
 		$("#onsen_water").mouseleave(function(){
+			$(this).animate({right: "0px"}, 400);
 			$("#water_text").hide();
-			$("#mud").show();
-			$("#yubatake").show();
 		});
 		$("#mud").mouseenter(function(){
-			$(this).animate({right: "400px"}, 400);
+			$(this).animate({right: "390px"}, 400);
 			$("#mud_text").show();
-			$("#onsen_water").hide();
-			$("#yubatake").hide();
 		});
 		$("#mud").mouseleave(function(){
+			$(this).animate({right: "0px"}, 400);
 			$("#mud_text").hide();
-			$("#onsen_water").show();
-			$("#yubatake").show();
 		});
 		$("#yubatake").mouseenter(function(){
-			$(this).animate({right: "800px"}, 400);
+			$(this).animate({right: "390px"}, 400);
 			$("#yubatake_text").show();
-			$("#onsen_water").hide();
-			$("#mud").hide();
 		});
 		$("#yubatake").mouseleave(function(){
+			$(this).animate({right: "0px"}, 400);
 			$("#yubatake_text").hide();
-			$("#onsen_water").show();
-			$("#mud").show();
-		});
+		})
 	});
 	</script>
 </head>
 
 <body>
+
+<div id="info_page">
 
 <h1 id="info_title">Onsen Health Benefits</h1>
 
@@ -46,22 +40,29 @@
 	<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
 </div>
 
-<div id="onsen">
-	<img id="onsen_water" src="/images/onsen_water.jpg"/>
+<div class="sections">
+	<img class="info_images" id="onsen_water" src="/images/onsen_water.jpg"/>
 		<div class="text" id="water_text">
 			<h1>Water</h1>
 			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
-	</div>
-	<img id="mud" src="/images/mud_bath.jpg"/>
+		</div>
+</div>
+
+<div class="sections">
+	<img class="info_images" id="mud" src="/images/mud_bath.jpg"/>
 		<div class="text" id="mud_text">
 			<h1>Mud</h1>
 			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
 		</div>
-	<img id="yubatake" src="/images/yubatake.jpg"/>
+</div>
+
+<div class="sections">
+	<img class="info_images" id="yubatake" src="/images/yubatake.jpg"/>
 		<div class="text" id="yubatake_text">
 			<h1>Mud</h1>
 			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
 		</div>
+</div>
 
 </div>
 
