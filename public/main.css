@@ -108,37 +108,54 @@ nav li:hover a {
 
 #landing {
   background-image: url("/images/onsen_nightview.jpg");
+  min-width: 1264px;
+  min-height: 768px;
 }
 
-#insignia {
-  position: absolute;
-  margin-bottom: 40px;
-  margin-left: 20px;
-}
-
-#logo {
+#byline {
   color: #FFF;
-  font-size: 6em;
+  text-align: center;
   font-family: 'Big Caslon', serif;
+  font-size: 4em;
+  margin-top: 0;
+  padding-top: 150px;
 }
 
 /*Contact Page*/
 
-#screen_space {
-  width: 1264px;
-  margin: 0 auto;
+
+
+#contact {
+  background-color: #D1E6F4;
+  min-width: 1264px;
   min-height: 768px;
 }
 
-#contact {
-  background-color: #ACE5EE;
-}
-
 form {
- width: 325px;
- margin: 250px auto;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 250px;
 }
 
+input {
+  margin: 10px 0;
+}
+
+label {
+  color: #062235;
+  font-weight: bold;
+}
+
+#button {
+  margin-top: 50px;
+  margin-left: 75px;
+  border-radius: 5px;
+  color: #FFF;
+}
+
+#button:focus {
+  outline-color: #062235;
+}
 
 
 
