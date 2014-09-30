@@ -1,32 +1,40 @@
 <head>
+
 	<script>
 	$(document).ready(function(){
 		$("#onsen_water").mouseenter(function(){
-			$(this).animate({right: "390px"}, 400);
+			$(this).animate({right: "350px"}, 600);
 		  $("#water_text").show();
+		  $("#water_title").hide();
 		});
-		$("#onsen_water").mouseleave(function(){
-			$(this).animate({right: "0px"}, 400);
+		$("#water_section").mouseleave(function(){
+			$("#onsen_water").animate({right: "0px"}, 600);
 			$("#water_text").hide();
+			$("#water_title").show();
 		});
 		$("#mud").mouseenter(function(){
-			$(this).animate({right: "390px"}, 400);
+			$("#mud").animate({right: "350px"}, 600);
 			$("#mud_text").show();
+			$("#mud_title").hide();
 		});
-		$("#mud").mouseleave(function(){
-			$(this).animate({right: "0px"}, 400);
+		$("#mud_section").mouseleave(function(){
+			$("#mud").animate({right: "0px"}, 600);
 			$("#mud_text").hide();
+			$("#mud_title").show();
 		});
-		$("#yubatake").mouseenter(function(){
-			$(this).animate({right: "390px"}, 400);
-			$("#yubatake_text").show();
+		$("#acidity").mouseenter(function(){
+			$("#acidity").animate({right: "350px"}, 600);
+			$("#acidity_text").show();
+			$("#acidity_title").hide();
 		});
-		$("#yubatake").mouseleave(function(){
-			$(this).animate({right: "0px"}, 400);
-			$("#yubatake_text").hide();
+		$("#acidity_section").mouseleave(function(){
+			$("#acidity").animate({right: "0px"}, 600);
+			$("#acidity_text").hide();
+			$("#acidity_title").show();
 		})
 	});
 	</script>
+
 </head>
 
 <body>
@@ -37,32 +45,37 @@
 
 <div id="intro">
 	<h1> What are Onsen? </h1>
-	<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
+	<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees C at its point of release, is officially considered an 'onsen'.</p>
 </div>
 
-<div class="sections">
+<div class="sections" id="water_section">
 	<img class="info_images" id="onsen_water" src="/images/onsen_water.jpg"/>
+	<h1 id="water_title">WATER</h1>
 		<div class="text" id="water_text">
-			<h1>Water</h1>
-			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
+			<h2>Water</h2>
+			<p>Each hot spring provides a different benefit and ailment reliefs. Springs that are high in sodium chloride aid people with sensitivity to cold, back problems, muscle & joint pains, etc. A thin layer of salt keeps the skin moisturized. Carbon dioxide springs is good for people with high blood pressure, arterial disesases, and cardiac diseases. It helps to increase blood flow within your body. Radioactive springs has a gas that when inhaled runs through the whole body and improves your natural healing power.</p>
 		</div>
 </div>
 
-<div class="sections">
+<div class="sections" id="mud_section">
 	<img class="info_images" id="mud" src="/images/mud_bath.jpg"/>
+	<h1 id="mud_title">MUD</h1>
 		<div class="text" id="mud_text">
 			<h1>Mud</h1>
-			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
+			<p>Mud baths do not use ordinary mud, but rather use hot spring water containing fine quality ore mud. This fine mud rose up from the depths of the earth after untold time, and when it dries it turns into a mist-like powder. These mud baths provide effects against hyperthyroidism, high blood pressure, arteriosclerosis, heart infarction, and brain infarct. </p>
 		</div>
 </div>
 
-<div class="sections">
-	<img class="info_images" id="yubatake" src="/images/yubatake.jpg"/>
-		<div class="text" id="yubatake_text">
-			<h1>Mud</h1>
-			<p>In Japan, a law was created known as the 'onsenhou' (Hot Spring Law). Based on this law, a natural spring that contains over a defined amount of natural chemical components, and is over a temperature of 25 degrees at its point of release, is officially considered an 'onsen'. There are a number of different onsen categories, according to chemical composition and temperature.</p>
+<div class="sections" id="acidity_section">
+	<img class="info_images" id="acidity" src="/images/yubatake.jpg"/>
+	<h1 id="acidity_title">ACIDITY</h1>
+		<div class="text" id="acidity_text">
+			<h1>Acidity</h1>
+			<p>A hot spring with a high PH value of 1.2 exhibits powerful sterilizing properties that are good for activation of liver functions and treatment of rheumatism, anemia, skin diseases, and other ailments. You will be able to experience the stimulating sensation of soaking in what feels like carbonated water. The effects can be felt right away, as your whole body begins to tingle and go numb just like one’s mouth feels after eating extremely spicy food. You can also drink the waters, which are good for the stomach.</p>
 		</div>
 </div>
+
+<div id="bottom"></div>
 
 </div>
 
