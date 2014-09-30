@@ -17,22 +17,27 @@ get '/contact' do
 	erb :contact
 end
 
-#post '/:email/:name/contact' do 
-  # m = Mandrill::API.new
-  # message = {
-  #   :subject=> "Request for Relaxation Information"
-  #   :from_name=> "Web Automated",
-  #   :text=> "Please send " + params[:from_name] + " the Japan Spa packages brochure at " + params[:from_email] + ".",    
-  #   :to=>[
-  #     {
-  #     :email=> "nkabrown@gmail.com",
-  #     :name=> "Nathan",
-  #     }
-  #   ],
-  #   :html=> "<html><h1>New Request</h1><br><p>Please send " + params[:from_name] + " the Japan Spa packges brochure at " + params[:from_email] + ".</p></html>",
-  #   :from_email=> "Web Automated",
-  # }
-#   sending = m.messages.send message
-#   puts "params are " + params.inspect
-#   redirect '/'
-# end
+post '/contact' do
+  puts "my params are" + params.inspect
+
+  m = Mandrill::API.new 
+  email = params[:email]
+  name = params[:name]
+  message = {  
+   :subject=> "Hello from the Japanese Spa Association",  
+   :from_name=> "Japan Spa Association",  
+   :text=>"Thank you for taking time to discover Japan’s beautiful spas.",  
+   :to=>[  
+     {  
+       :email=> email,
+       :name=> name,  
+     }  
+   ],  
+   :html=> "<html><h1>Hi,</h1> <p>thank you for taking time to discover Japan’s beautiful spa’s</p> <p>We will be sending you a brochure to introduce you to all of the relaxing and rejuvenating choices that await you during your visit to Japan.</html>",  
+   :from_email=> "nkabrown@gmail.com",  
+  }  
+  sending = m.messages.send message  
+  puts sending  
+
+  redirect '/'
+end
