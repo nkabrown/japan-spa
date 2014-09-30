@@ -23,7 +23,7 @@ nav {
 #nav a {
   display: block;
   padding: 5px 0;
-  color: #FF1493;
+  color: #F0F8FF;
   text-decoration: none;
 }
 
@@ -180,7 +180,7 @@ label {
   border-radius: 100px;
   border: 5px solid #FFF;
   position: absolute;
-  bottom: 45px;
+  bottom: 85px;
   left: 65px;
   background: #FFF;
 }
@@ -192,7 +192,9 @@ label {
   bottom: 75px;
   left: 6px;
   text-align: center;
+  color: #000;
 }
+
 #info p {
   text-align: center;
   font-size: 3em;
