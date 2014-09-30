@@ -1,3 +1,4 @@
+
 /****************************************************************************/
 /****************************** Navigation Bar ******************************/
 /****************************************************************************/
@@ -7,15 +8,14 @@
   color: #FFF;
 }
 
-
 #bars {
   color: #FFF;
 }
 
 nav {
   position: absolute;
-  margin-top: 45px;
-  margin-left: 65px;
+  margin-top: 40px;
+  margin-left: 45px;
 }
 
 #nav {
@@ -77,10 +77,21 @@ nav li:hover a {
 #byline {
   color: #FFF;
   text-align: center;
-  font-family: 'Big Caslon', serif;
-  font-size: 4em;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 4.5em;
   margin-top: 0;
-  padding-top: 150px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-top: 100px;
+}
+
+#landing_text{
+  color: #fff;
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
 /*****************************************************************/
@@ -115,11 +126,11 @@ nav li:hover a {
 .sections{
   height: 330px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .info_images {
-  max-width: 40%;
+  max-width: 500px;
   position: absolute;
   margin: 0 31% 0 31%;
   float: left;
@@ -210,9 +221,21 @@ a{
   font-size: 60px;
   font-style: bold;
   margin-top: 0;
-  top: 30px;
-  left: 200px;
-  background-color: rgba(230, 230, 230, 0.7);
+  top: 50px;
+  left: 190px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
+#instruction{
+  position: absolute;
+  color: #565B61;
+  font-size: 17px;
+  font-style: bold;
+  margin-top: 0;
+  top: 208px;
+  left: 271px;
+  background-color: rgba(150, 150, 150, 0.3);
   padding: 10px;
 }
 
@@ -257,7 +280,7 @@ a{
 #noboribetsu_popup{
   display: none;
   top: 105px;
-  right: 462px;
+  right: 242px;
 }
 
 #hokkaido_dot{
