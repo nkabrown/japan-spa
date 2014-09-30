@@ -67,7 +67,9 @@ nav li:hover a {
 /*****************************************************************/
 
 #landing {
+
   background-image: url("/images/onsen_nightview2.jpg");
+  background-image: no-repeat;
   min-width: 1264px;
   min-height: 768px;
 }
@@ -366,6 +368,7 @@ form {
 
 input {
   margin: 8px 10px;
+  color: #062235;
 }
 
 label {
