@@ -2,18 +2,98 @@
 
 	<script>
 	$(document).ready(function(){
-		$("#noboribetsu_dot").mouseenter(function(){
+
+		$("#hokkaido_dot").mouseenter(function(){
 			$("#noboribetsu_popup").show();
 		});
 		$("#noboribetsu_popup").mouseenter(function(){
 			$(this).show();
 		});
-		$("#noboribetsu_dot").mouseleave(function(){
+		$("#hokkaido_dot").mouseleave(function(){
 			$("#noboribetsu_popup").hide();
 		});
 		$("#noboribetsu_popup").mouseleave(function(){
 			$(this).hide();
 		});
+
+		$("#akita_dot").mouseenter(function(){
+			$("#tamagawa_popup").show();
+		});
+		$("#tamagawa_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#akita_dot").mouseleave(function(){
+			$("#tamagawa_popup").hide();
+		});
+		$("#tamagawa_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
+		$("#gunma_dot").mouseenter(function(){
+			$("#kusatsu_popup").show();
+		});
+		$("#kusatsu_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#gunma_dot").mouseleave(function(){
+			$("#kusatsu_popup").hide();
+		});
+		$("#kusatsu_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
+		$("#tokyo_dot").mouseenter(function(){
+			$("#musashikoyama_popup").show();
+		});
+		$("#musashikoyama_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#tokyo_dot").mouseleave(function(){
+			$("#musashikoyama_popup").hide();
+		});
+		$("#musashikoyama_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
+		$("#shizuoka_dot").mouseenter(function(){
+			$("#kawane_popup").show();
+		});
+		$("#kawane_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#shizuoka_dot").mouseleave(function(){
+			$("#kawane_popup").hide();
+		});
+		$("#kawane_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
+		$("#kyoto_dot").mouseenter(function(){
+			$("#arashiyama_popup").show();
+		});
+		$("#arashiyama_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#kyoto_dot").mouseleave(function(){
+			$("#arashiyama_popup").hide();
+		});
+		$("#arashiyama_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
+		$("#oita_dot").mouseenter(function(){
+			$("#beppu_popup").show();
+		});
+		$("#beppu_popup").mouseenter(function(){
+			$(this).show();
+		});
+		$("#oita_dot").mouseleave(function(){
+			$("#beppu_popup").hide();
+		});
+		$("#beppu_popup").mouseleave(function(){
+			$(this).hide();
+		});
+
 	});
 	</script>
 
@@ -22,43 +102,131 @@
 <body>
 	<div id="map_page">
 		<div id="map_image"></div>
+
+		<p id="map_title">Top Locations <br> throughout Japan</p>
 		
-		<div>
+		<div><!--Noboribetsu-->
 
 			<div class="map_popup" id="noboribetsu_popup">
 				<a href="http://www.noboribetsu-spa.jp/?page_id=1797&lang=en" target="_blank"><img class="map_image" id="noboribetsu_onsen" src="/images/noboribetsu_onsen.jpg"/>
 				<p class="popup_text"><u>Noboribetsu Onsen</u></a> <br> <span class="description">Acid Springs</span></p>
 			</div>
 
-			<div class="dot" id="noboribetsu_dot">
+			<div class="dot" id="hokkaido_dot">
 				<p class="map_text">Hokkaido</p>
 			</div>
 
 		</div>
 
-		<div class="dot" id="akita_dot">
-			<p class="map_text">Akita</p>
+		<div><!--Akita-->
+			
+			<div class="map_popup" id="tamagawa_popup">
+				<a href="http://www.tamagawa-onsen.jp" target="_blank"><img class="map_image" id="tamagawa_onsen" src="/images/tamagawa_onsen.jpg"/>
+				<p class="popup_text"><u>Tamagawa Onsen</u></a> <br> <span class="description">PH 1.2</span></p>
+			</div>
+
+			<div class="dot" id="akita_dot">
+				<p class="map_text">Akita</p>
+			</div>
+
+		</div>
+		
+		<div><!--Gunma-->
+
+			<div class="map_popup" id="kusatsu_popup">
+				<a href="http://kusatsuonsen-international.jp/en/" target="_blank"><img class="map_image" id="kusatsu_onsen" src="/images/kusatsu_onsen.jpg"/>
+				<p class="popup_text"><u>Kusatsu Onsen</u></a> <br> <span class="description">Yubatake (Mineral Salts)</span></p>
+			</div>
+
+			<div class="dot" id="gunma_dot">
+				<p class="map_text">Gunma</p>
+			</div>
+
 		</div>
 
-		<div class="dot" id="gunma_dot">
-			<p class="map_text">Gunma</p>
+		<div><!--Tokyo-->
+			
+			<div class="map_popup" id="musashikoyama_popup">
+				<a href="http://www.shimizuyu.com" target="_blank"><img class="map_image" id="musashikoyama_onsen" src="/images/musashikoyama_onsen.jpg"/>
+				<p class="popup_text"><u>Musashikoyama Onsen</u></a> <br> <span class="description">Gold Water</span></p>
+			</div>
+
+			<div class="dot" id="tokyo_dot">
+				<p class="map_text">Tokyo</p>
+			</div>
+
 		</div>
 
-		<div class="dot" id="tokyo_dot">
-			<p class="map_text">Tokyo</p>
+		<div><!--Shizuoka-->
+			
+			<div class="map_popup" id="kawane_popup">
+				<a href="http://kawaneonsen.jp" target="_blank"><img class="map_image" id="kawane_onsen" src="/images/kawane_onsen.jpg"/>
+				<p class="popup_text"><u>Kawane Onsen</u></a> <br> <span class="description">Charcoal Baths</span></p>
+			</div>
+			
+			<div class="dot" id="shizuoka_dot">
+				<p class="map_text">Shizuoka</p>
+			</div>
+
 		</div>
 
-		<div class="dot" id="kanagawa_dot">
-			<p class="map_text">Kanagawa</p>
+		<div><!--Kyoto-->
+
+			<div class="map_popup" id="arashiyama_popup">
+				<a href="http://www.hanaikada.co.jp/english/onsen.html" target="_blank"><img class="map_image" id="arashiyama_onsen" src="/images/arashiyama_onsen.jpg"/>
+				<p class="popup_text"><u>Arashiyama Onsen</u></a> <br> <span class="description">Natural Spring Water</span></p>
+			</div>
+		
+			<div class="dot" id="kyoto_dot">
+				<p class="map_text">Kyoto</p>
+			</div>
+
 		</div>
 
-		<div class="dot" id="kyoto_dot">
-			<p class="map_text">Kyoto</p>
-		</div>
+		<div><!--Oita-->
 
-		<div class="dot" id="oita_dot">
-			<p class="map_text">Oita</p>
+			<div class="map_popup" id="beppu_popup">
+				<a href="http://www18.ocn.ne.jp/~hoyoland/" target="_blank"><img class="map_image" id="beppu_onsen" src="/images/beppu_onsen.jpg"/>
+				<p class="popup_text"><u>Beppu Onsen</u></a> <br> <span class="description">Mud Bath</span></p>
+			</div>
+
+			<div class="dot" id="oita_dot">
+				<p class="map_text">Oita</p>
+			</div>
+
 		</div>
 
 	</div>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

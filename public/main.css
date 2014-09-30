@@ -54,7 +54,6 @@ nav li:hover ul {
 }
 
 nav li:hover a {
-  background-color: #fff;
   text-decoration: underline;
 }
 
@@ -67,7 +66,7 @@ nav li:hover a {
 /*****************************************************************/
 
 #landing {
-  background-image: url("/images/onsen_nightview.jpg");
+  background-image: url("/images/onsen_nightview2.jpg");
   min-width: 1264px;
   min-height: 768px;
 }
@@ -202,6 +201,18 @@ a{
   margin-left: 25%;
 }
 
+#map_title{
+  position: absolute;
+  color: #565B61;
+  font-size: 60px;
+  font-style: bold;
+  margin-top: 0;
+  top: 30px;
+  left: 200px;
+  background-color: rgba(230, 230, 230, 0.7);
+  padding: 10px;
+}
+
 .dot{
   position: absolute;
   height: 12px;
@@ -220,6 +231,7 @@ a{
   height: 200px;
   width: 220px;
   position: absolute;
+  z-index: 1;
 }
 
 .map_image{
@@ -242,17 +254,18 @@ a{
 #noboribetsu_popup{
   display: none;
   top: 105px;
-  right: 242px;
+  right: 462px;
 }
 
-#noboribetsu_onsen{
-  top: 160px;
-  right: 255px;
-}
-
-#noboribetsu_dot{
+#hokkaido_dot{
   top: 300px;
   right: 455px;
+}
+
+#tamagawa_popup{
+  display: none;
+  top: 205px;
+  right: 245px;
 }
 
 #akita_dot{
@@ -260,9 +273,22 @@ a{
   right: 460px;
 }
 
+#kusatsu_popup{
+  display: none;
+  top: 365px;
+  right: 517px;
+}
+
 #gunma_dot{
   top: 560px;
   right: 510px;
+}
+
+#musashikoyama_popup{
+  display: none;
+  top: 395px;
+  right: 255px;
+
 }
 
 #tokyo_dot{
@@ -270,14 +296,32 @@ a{
   right: 470px;
 }
 
-#kanagawa_dot{
-  top: 615px;
-  right: 490px;
+#kawane_popup{
+  display: none;
+  top: 630px;
+  right: 516px;
+}
+
+#shizuoka_dot{
+  top: 625px;
+  right: 510px;
+}
+
+#arashiyama_popup{
+  display: none;
+  top: 441px;
+  right: 636px;
 }
 
 #kyoto_dot{
   top: 635px;
   right: 630px;
+}
+
+#beppu_popup{
+  display: none;
+  top: 735px;
+  right: 572px;
 }
 
 #oita_dot{
