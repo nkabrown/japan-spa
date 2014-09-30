@@ -128,33 +128,85 @@ nav li:hover a {
   min-height: 768px;
 }
 
+#waves {
+  background-image: url(/images/waves.png);
+  background-repeat: no-repeat;
+}
+
+#form_box {
+  width: 235px;
+  height: 235px;
+  margin: 0 auto;
+  background-color: rgba(255, 250, 240, .45);
+}
+
+#form_box p {
+  text-align: center;
+  padding-top: 12px;
+  color: #062235;
+}
 form {
   width: 200px;
   margin: 0 auto;
-  padding-top: 250px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 input {
-  margin: 10px 0;
+  margin: 8px 10px;
 }
 
 label {
   color: #062235;
   font-weight: bold;
+  margin: 0 10px;
 }
 
 #button {
-  margin-top: 50px;
+  margin-top: 25px;
   margin-left: 75px;
   border-radius: 5px;
-  color: #FFF;
+  color: #062235;
+  border: 1px solid #062235;
 }
 
 #button:focus {
   outline-color: #062235;
 }
 
+#info {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  border: 5px solid #FFF;
+  position: absolute;
+  bottom: 45px;
+  left: 65px;
+  background: #FFF;
+}
 
+#info h2 {
+  display: inline-block;
+  font-size: 1em;
+  position: absolute;
+  bottom: 75px;
+  left: 6px;
+  text-align: center;
+}
+#info p {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Big Caslon', serif;
+  color: #000;
+  position: absolute;
+  bottom: -47px;
+  left: 23px;
+}
+
+#info p a {
+  text-decoration: none;
+  color: #000;
+}
 
 
 

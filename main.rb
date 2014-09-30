@@ -16,3 +16,10 @@ end
 get '/contact' do
 	erb :contact
 end
+
+post '/contact' do 
+  name = params[:name]
+  email = params[:email]
+
+  
+end
