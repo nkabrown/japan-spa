@@ -4,7 +4,7 @@
 
 *{
   font-family: 'Nixie One';
-  color: #565B61;
+  color: #FFF;
 }
 
 
@@ -16,7 +16,6 @@ nav {
   position: absolute;
   margin-top: 45px;
   margin-left: 65px;
-  color: #F0FFFF;
 }
 
 #nav {
@@ -32,7 +31,7 @@ nav {
 #nav a {
   display: block;
   padding: 5px 0;
-  color: #F0FFFF;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -56,7 +55,6 @@ nav li:hover ul {
 }
 
 nav li:hover a {
-  background-color: #F0FFFF;
   text-decoration: underline;
 }
 
