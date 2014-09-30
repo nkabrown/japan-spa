@@ -4,33 +4,33 @@
 	$(document).ready(function(){
 		$("#onsen_water").mouseenter(function(){
 			$(this).animate({right: "350px"}, 600);
-		  $("#water_text").show();
+		  $("#water_text").delay(600).show(0);
 		  $("#water_title").hide();
 		});
 		$("#water_section").mouseleave(function(){
-			$("#onsen_water").animate({right: "0px"}, 600);
+			$("#onsen_water").animate({right: "-15px"}, 600);
 			$("#water_text").hide();
-			$("#water_title").show();
+			$("#water_title").delay(600).show(0);
 		});
 		$("#mud").mouseenter(function(){
 			$("#mud").animate({right: "350px"}, 600);
-			$("#mud_text").show();
+			$("#mud_text").delay(600).show(0);
 			$("#mud_title").hide();
 		});
 		$("#mud_section").mouseleave(function(){
-			$("#mud").animate({right: "0px"}, 600);
+			$("#mud").animate({right: "-15px"}, 600);
 			$("#mud_text").hide();
-			$("#mud_title").show();
+			$("#mud_title").delay(600).show(0);
 		});
 		$("#acidity").mouseenter(function(){
 			$("#acidity").animate({right: "350px"}, 600);
-			$("#acidity_text").show();
+			$("#acidity_text").delay(600).show(0);
 			$("#acidity_title").hide();
 		});
 		$("#acidity_section").mouseleave(function(){
-			$("#acidity").animate({right: "0px"}, 600);
+			$("#acidity").animate({right: "-15px"}, 600);
 			$("#acidity_text").hide();
-			$("#acidity_title").show();
+			$("#acidity_title").delay(600).show(0);
 		})
 	});
 	</script>
