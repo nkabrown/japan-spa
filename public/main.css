@@ -345,11 +345,13 @@ a{
 #waves {
   background-image: url(/images/waves.png);
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20% 0;
 }
 
 #form_box {
-  width: 235px;
-  height: 235px;
+  width: 236px;
+  height: 236px;
   margin: 0 auto;
   background-color: rgba(255, 250, 240, .45);
 }
@@ -367,14 +369,18 @@ form {
 }
 
 input {
-  margin: 8px 10px;
+  margin: 8px 19px;
   color: #062235;
+}
+
+input:focus {
+  outline: none;
 }
 
 label {
   color: #062235;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 19px;
 }
 
 #button {
