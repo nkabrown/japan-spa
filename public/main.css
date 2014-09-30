@@ -53,8 +53,7 @@ nav li:hover ul {
 }
 
 nav li:hover a {
-/*  background-color: #fff;
-*/  background-color: #F0F8FF;
+  background-color: #F0F8FF;
   text-decoration: underline;
 }
 
